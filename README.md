@@ -1,1 +1,4 @@
-# google-form-to-PDF
+# Generate a PDF from a Google Form submission
+:warning:FYI Script written for specific form questions! To utilize for your own purposes, be sure to replace the parameters for each `body.replaceText()` with your own information. Syntax is `replaceText(searchPattern, replacement)`, where `searchPattern` is the placeholder text found in your template doc, and `replacement` is the event info from the form submission. More details on this method can be found on the [Apps Script reference page](https://developers.google.com/apps-script/reference/document/body#replacetextsearchpattern,-replacement).
+
+Simple script which uses Apps Script Document Service to replace placeholder text in Template Doc with form submission data, then creates a PDF from the updated Doc and saves in the defined Drive folder.
